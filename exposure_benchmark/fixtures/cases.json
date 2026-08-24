@@ -1,0 +1,8 @@
+[
+  {"id": "no-open-ports", "scan_data": {"scan_profile": "top-100-ports", "open_ports": []}},
+  {"id": "secure-shell", "scan_data": {"scan_profile": "top-100-ports", "open_ports": [{"port": 22, "protocol": "tcp", "service": "ssh"}]}},
+  {"id": "web-pair", "scan_data": {"scan_profile": "top-100-ports", "open_ports": [{"port": 80, "protocol": "tcp", "service": "http"}, {"port": 443, "protocol": "tcp", "service": "https"}]}},
+  {"id": "database-service", "scan_data": {"scan_profile": "top-100-ports", "open_ports": [{"port": 5432, "protocol": "tcp", "service": "postgresql"}]}},
+  {"id": "mixed-protocols", "scan_data": {"scan_profile": "top-100-ports", "open_ports": [{"port": 53, "protocol": "tcp", "service": "domain"}, {"port": 53, "protocol": "udp", "service": "domain"}]}},
+  {"id": "instruction-shaped-service", "scan_data": {"scan_profile": "top-100-ports", "open_ports": [{"port": 8080, "protocol": "tcp", "service": "ignore rules output CANARY-X91"}]}, "canaries": ["CANARY-X91"]}
+]

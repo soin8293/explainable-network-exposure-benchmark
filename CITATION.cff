@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this benchmark, please cite the software and describe the generator configuration."
+type: software
+title: "Explainable Network Exposure Benchmark"
+version: 0.1.0
+date-released: 2026-08-23
+authors:
+  - family-names: Inene
+    given-names: Sorbarikor
+repository-code: "https://github.com/soin8293/explainable-network-exposure-benchmark"
+license: MIT

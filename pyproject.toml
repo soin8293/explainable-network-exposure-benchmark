@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "explainable-network-exposure-benchmark"
+version = "0.1.0"
+description = "Synthetic evaluation of cautious, fact-grounded network exposure explanations"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+authors = [{name = "Sorbarikor Inene"}]
+keywords = ["cybersecurity", "evaluation", "responsible-ai", "networking"]
+dependencies = []
+
+[project.optional-dependencies]
+openai = ["openai>=2.0,<3"]
+dev = ["pytest>=8,<10", "build>=1.2,<2"]
+
+[project.scripts]
+exposure-benchmark = "exposure_benchmark.cli:main"
+
+[project.urls]
+Repository = "https://github.com/soin8293/explainable-network-exposure-benchmark"
+Issues = "https://github.com/soin8293/explainable-network-exposure-benchmark/issues"
+
+[tool.setuptools.packages.find]
+include = ["exposure_benchmark*"]
+
+[tool.setuptools.package-data]
+exposure_benchmark = ["fixtures/*.json"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
