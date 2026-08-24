@@ -14,7 +14,7 @@ keywords = ["cybersecurity", "evaluation", "responsible-ai", "networking"]
 dependencies = []
 
 [project.optional-dependencies]
-openai = ["openai>=2.0,<3"]
+openai = ["openai>=2.0,<4"]
 dev = ["pytest>=8,<10", "build>=1.2,<2"]
 
 [project.scripts]
