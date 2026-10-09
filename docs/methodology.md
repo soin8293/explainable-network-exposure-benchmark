@@ -46,3 +46,7 @@ date, prompt, dependency version, and fixture commit when reporting results.
 - A canary test is not general proof of prompt-injection resistance.
 - The benchmark evaluates explanation text, not scanning accuracy or system risk.
 - Model results can vary across versions and sampling behavior.
+
+## Claim-rule context (October 2026 repair)
+
+The evaluator checks each occurrence of its listed strong claims. It exempts immediate explicit denials such as `not a confirmed vulnerability`, `does not prove a confirmed vulnerability`, and `no evidence of a confirmed vulnerability`. An affirmative occurrence elsewhere is still flagged. `not only` does not count as denial. Quotes, hedged claims and indirect denials remain flagged for review; the rule cannot determine their meaning. This is a bounded precision repair, not a general natural-language entailment check. The synthetic claim-context tests cover these distinctions separately from generator quality.
