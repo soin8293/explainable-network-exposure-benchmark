@@ -12,6 +12,16 @@ prompt-injection canary.
 This is an evaluation prototype—not a scanner, vulnerability detector,
 production assurance tool, or peer-reviewed result.
 
+## Companion application
+
+[AI SOC Assistant](https://github.com/soin8293/ai_soc_assistant) is the companion
+application: authorized network-scan evidence becomes a bounded explanation.
+This repository supplies a standalone synthetic evaluation framework for that
+class of explanation. The application has its own evaluator; scores are not
+interchangeable and this is not a production security tool. See
+[the engineering roadmap](docs/engineering-roadmap.md).
+
+
 ## Why this project
 
 Security explanations can sound confident while silently inventing facts. This
@@ -77,12 +87,23 @@ Report the exact fixture commit, generator/model, prompt, dependency versions,
 and date. Cite the repository using `CITATION.cff` and disclose material AI
 assistance in derivative work.
 
+## AI assistance
+
 The initial implementation was produced with OpenAI Codex assistance at
-Sorbarikor Inene's direction; the committed tests and outputs are independently
-reproducible from the source.
+the direction of soin8293. The committed tests and outputs can be
+reproduced from the source; their scope and limitations remain as documented.
+
+The maintainer, soin8293, is responsible for project decisions and for reviewing
+and validating contributions. AI assistance does not establish correctness,
+security, or production readiness; consult the documented checks and
+limitations. Existing licenses and upstream credits remain applicable.
 
 ## Author and license
 
 Sorbarikor Inene — [@soin8293](https://github.com/soin8293)
 
 MIT License.
+
+Known plural forms and recognized quotation, uncertainty or reversed-denial contexts
+are conservatively flagged for review. Direct simple denials remain exempt.
+These phrase rules can miss other paraphrases and are not semantic guarantees.
